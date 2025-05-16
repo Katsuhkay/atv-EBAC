@@ -9,18 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
-    <!-- Slick Carousel CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
+<!--
+
+    CONSULTEM O README PARA DICAS DE COMO SOLUCIONAR O EXERCÍCIO!
+
+-->
 
 <body>
     <header>
         <h1>Adquira seu veículo agora mesmo!</h1>
     </header>
 
-    <!-- Carrossel de imagens - container principal -->
     <div id="carousel-imagens">
         <img src="./assets/slide1.png" alt="Carro da Porsche">
         <img src="./assets/slide2.png" alt="Carro da BMW">
@@ -29,7 +31,6 @@
 
     <div class="container">
         <h2>Insira seus dados para finalização da compra</h2>
-        <!-- Formulário com validação -->
         <form id="form">
             <div class="form-campo">
                 <label for="nome">Nome completo</label>
@@ -59,34 +60,14 @@
         </form>
     </div>
 
-    <!-- jQuery e plugins necessários -->
-    <!-- Importante: jQuery deve vir primeiro -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- Slick Carousel JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- Plugins de validação e máscara -->
-    <script src="../atv-EBAC/js/jquery.mask.min.js"></script>
-    <script src="../atv-EBAC/js/jquery.validate.min.js"></script>
-    <script src="../atv-EBAC/js/messages_pt_BR.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>    
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
     
-    <!-- Nosso script principal -->
-    <script src="../atv-EBAC/js/main.js"></script>
-    
-    <!-- Script de inicialização -->
-    <script>
-        // Inicialização do carrossel quando o documento estiver pronto
-        $(document).ready(function () {
-            $('#carousel-imagens').slick({
-                autoplay: true,      // Passa os slides automaticamente
-                arrows: false,        // Esconde as setas de navegação
-                dots: true,           // Mostra os pontos de navegação
-                infinite: true,       // Loop infinito
-                speed: 500,           // Velocidade da transição
-                fade: true,           // Efeito de fade entre slides
-                cssEase: 'linear'    // Transição suave
-            });
-        });
-    </script>
 </body>
+
 </html>
